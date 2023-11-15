@@ -1,0 +1,136 @@
+/* static/css/styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 223, 199);
+    margin: 0;
+    padding: 0;
+}
+  
+  .logo {
+    color: whitesmoke;
+    font-family: cursive;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 36px;
+    cursor: default;
+  }
+  .logo span {
+    color: #ffa07a;
+  }
+  
+  .nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.tab {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffa07a;
+  }
+  
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 5px 25px;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 7px;
+  }
+  
+  .tab button:hover {
+    background-color: #ffb68f;
+  }
+  
+  .tab button.active {
+    background-color: #e9967a;
+  }
+  
+  .tabcontent {
+    margin-top: 50px    ;
+    display: flex;
+    height: 90vh;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tablinks {
+    font-family: cursive;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .grid-container {
+    min-height: 80%;
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid container horizontally */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 10px;
+}
+
+
+.food-card {
+ grid-column: span 1;
+ grid-row: span 1;
+ border: 1px solid #ddd;
+ padding: 20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.order-details {
+ grid-column: span 1;
+ grid-row: span 2;
+ border: 1px solid #ddd;
+ background-color: #ffe8dd;
+ padding: 20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    background-color: #ffe8dd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.food-card .button {
+    height: 40px; /* Increase the height for better visibility */
+    max-width: 100%; /* Adjust the max-width to ensure it doesn't overflow */
+    background-color: #e44d26; /* Your chosen button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px; /* Adjust padding for better button appearance */
+    cursor: pointer;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 5px 10px;
+}

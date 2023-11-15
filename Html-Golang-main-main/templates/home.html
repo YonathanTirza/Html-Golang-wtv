@@ -1,0 +1,102 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/tabs.js"></script>
+    <script src="/static/js/main.js"></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">Foodie<span>Moodie</span></div>
+    </div>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Ayam')">Ayam dan Bebek</button>
+        <button class="tablinks" onclick="openCity(event, 'Mie')">Mie dan Kwetiaw</button>
+        <button class="tablinks" onclick="openCity(event, 'Minuman')">Minuman</button>
+        <button class="tablinks" onclick="openCity(event, 'Extra')">Extra</button>
+        
+    </div>
+
+    <!-- Tab content -->
+    <div id="Ayam" class="tabcontent">
+        <div class="grid-container">
+            
+            <div class="food-card">
+                <img src="/templates/image/ayam rica.jpg" alt="Food Image">
+                <div class="card-content">
+                    <div class="food-name">Ayam Rica-Rica</div>
+                    <div class="food-price">$10.99</div>
+                </div>
+                <button class="button" onclick="addToOrder('Ayam Rica-Rica', 10.99)">Add to Order</button>
+            </div>
+            
+            <div class="food-card">
+                <img src="/templates/image/Ayam matah.jpg" alt="Food Image">
+                <div class="card-content">
+                    <div class="food-name">Ayam Matah</div>
+                    <div class="food-price">$10.99</div>
+                </div>
+                <button class="button" onclick="addToOrder('Ayam Matah', 10.99)">Add to Order</button>
+            </div>
+            
+            <div class="food-card">
+                <img src="/templates/image/Ayam geprek.jpg" alt="Food Image">
+                <div class="card-content">
+                    <div class="food-name">Ayam Geprek</div>
+                    <div class="food-price">$10.99</div>
+                </div>
+                <button class="button" onclick="addToOrder('Ayam Geprek', 10.99)">Add to Order</button>
+            </div>
+
+            <div class="order-details">Order Details</div>
+            <div class="food-card">Food Card 4</div>
+            <div class="food-card">Food Card 5</div>
+            <div class="food-card">Food Card 6</div>
+        </div>
+    </div>
+
+    <div id="Mie" class="tabcontent">
+        <div class="grid-container">
+            <div class="food-card">Food Card 1</div>
+            <div class="food-card">Food Card 2</div>
+            <div class="food-card">Food Card 3</div>
+            <div class="order-details">Order Details</div>
+            <div class="food-card">Food Card 4</div>
+            <div class="food-card">Food Card 5</div>
+            <div class="food-card">Food Card 6</div>
+        </div>
+    </div>
+
+    <div id="Minuman" class="tabcontent">
+        <div class="grid-container">
+            <div class="food-card">Food Card 1</div>
+            <div class="food-card">Food Card 2</div>
+            <div class="food-card">Food Card 3</div>
+            <div class="order-details">Order Details</div>
+            <div class="food-card">Food Card 4</div>
+            <div class="food-card">Food Card 5</div>
+            <div class="food-card">Food Card 6</div>
+        </div>
+    </div>
+
+    <div id="Extra" class="tabcontent">
+        <div class="grid-container">
+            <div class="food-card">Food Card 1</div>
+            <div class="food-card">Food Card 2</div>
+            <div class="food-card">Food Card 3</div>
+            <div class="order-details">Order Details</div>
+            <div class="food-card">Food Card 4</div>
+            <div class="food-card">Food Card 5</div>
+            <div class="food-card">Food Card 6</div>
+        </div>
+    </div>
+
+</body>
+</html>
